@@ -61,7 +61,7 @@ if run_as_module:
 
         _fix_logging(FileHandler)
 
-    if HOSTED_ON == "heroku":
+    if HOSTED_ON == "termux":
         from ._extra import _ask_input
 
         _ask_input()
