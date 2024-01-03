@@ -50,7 +50,7 @@ if run_as_module:
         os.remove(file)
 
     HOSTED_ON = where_hosted()
-    LOGS = getLogger("Assistant-Key")
+    LOGS = getLogger("entah")
     TelethonLogger = getLogger("Telethon")
     TelethonLogger.setLevel(INFO)
 
@@ -91,7 +91,7 @@ if run_as_module:
     LOGS.info(f"Python version - {platform.python_version()}")
     LOGS.info(f"Library Version - {__Ayra__}")
     LOGS.info(f"Telethon Version - {__version__} [Layer: {LAYER}]")
-    LOGS.info(f"Assistant-Key Version - {ayra_version} [{HOSTED_ON}]")
+    LOGS.info(f"entah Version - {ayra_version} [{HOSTED_ON}]")
 
     try:
         from safety.tools import *
