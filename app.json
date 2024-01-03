@@ -6,18 +6,29 @@
         "Telethon",
         "Pyrogram"
     ],
-    "repository": "https://github.com/KojiraReyyAnata/Assistant-Key",
+    "repository": "https://github.com/ejaanck/entah",
     "success_url": "https://t.me/rizzvbss",
     "stack": "container",
     "env": {
-	@@ -22,6 +22,10 @@
+        "API_ID": {
+            "description": "Au ya cek my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Au ya cek my.telegram.org",
+            "required": true
+        },
+        "SESSION": {
             "description": "Silakan isi Telethon Atau Pyrogram V2",
             "value": ""
         },
         "HEROKU_API": {
             "description": "Isi Coy Jan Dikosongin.",
             "required": true
-	@@ -32,15 +36,6 @@
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Isi Coy Jan Dikosongin",
+            "value": "",
             "required": true
         }
     },
@@ -33,3 +44,15 @@
   "buildpacks": [
     {
       "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "basic"
+        }
+    }
+}
