@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-REPO="https://github.com/KojiraReyyAnata/Assistant-Key.git"
-DIR="/root/KojiraReyyAnata"
+REPO="https://github.com/ejaanck/entah.git"
+DIR="/root/ejaanck"
 
 spinner(){
     local pid=$!
@@ -31,7 +31,7 @@ clone_repo(){
             fi
             return
     fi
-    echo -e "Cloning Asisstant-Key ${BRANCH}... "
+    echo -e "Cloning entah ${BRANCH}... "
     git clone -b $BRANCH $REPO $DIR
 }
 
