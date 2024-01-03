@@ -72,13 +72,13 @@ in_alive = """
 absen = [
     "**Hadir Sayang** 😳",
     "**Hadir Sayanggku** 😍",
-    "**Key Ayo Nikah** 🥺",
-    "**Key Plis Jangan Tinggalin Aku** 🥺🙏🏻",
-    "**kyyyaaa keyy Sayang** 😘",
-    "**Hadir Mas Key Akuuuuhhh** ☺️",
-    "**Hadir My Boy Friend** 🥰",
-    "**Mau Peluk Mass Key** 🤗",
-    "**Apasi Bawel Keyy** 🥰",
+    "**Apa mau ngentot?** 🥺",
+    "**hayu kita ngentot** 🥺🙏🏻",
+    "**Hayu Sayang** 😘",
+    "**Hadir Sayangkuhh** ☺️",
+    "**Hadir Cintaku** 🥰",
+    "**Mau ewe sayang** 🤗",
+    "**Ayo ngewe** 🥰",
 ]
 
 
@@ -115,7 +115,7 @@ async def lol(
             entity, Chat
         ):
             groups += 1
-    status1 = "<b>[KEY AGL]</b>" if ayra.sender_id in DEVS else "<b>[Owner]</b>"
+    status1 = "<b>[MEMEK KUDA]</b>" if ayra.sender_id in DEVS else "<b>[Owner]</b>"
     remaining_days = "Limited Edition"
     start = time.time()
     await ayra.client(PingRequest(ping_id=0))
@@ -202,10 +202,10 @@ async def lol(
 @register(incoming=True, from_users=DEVS, pattern=r"^Cping$")
 async def _(event):
     start = time.time()
-    x = await event.eor("Ping !")
+    x = await event.eor("Ah Ah")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
-    await x.edit(f"**Nyepong 😍 ** `{end}ms`\n**Masa Aktif** - `{uptime}`")
+    await x.edit(f"**📶 Crott ** `{end}ms`\n**Enak Sayang** - `{uptime}`")
 
 
 async def get_readable_time(seconds: int) -> str:
