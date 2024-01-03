@@ -164,7 +164,7 @@ def AyraDB():
         LOGS.critical(
             "No DB requirement fullfilled!\nPlease install redis, mongo or sql dependencies...\nTill then using local file as database."
         )
-    if HOSTED_ON == "termux":
+    if HOSTED_ON == "heroku":
         return LocalDB()
     exit()
 
