@@ -15,7 +15,7 @@ run_as_module = False
 
 from logging import getLogger
 
-LOGS = getLogger("Assistant-Key")
+LOGS = getLogger("entah")
 
 class AyConfig:
     lang = "id"
@@ -103,7 +103,7 @@ if sys.argv[0] == "-m":
     INLINE_PM = udB.set_key("INLINE_PM", "True")
     PMLOG = udB.set_key("PMLOG", "True")
 else:
-    print("© Assistant-Key ")
+    print("© entah ")
 
     
 
